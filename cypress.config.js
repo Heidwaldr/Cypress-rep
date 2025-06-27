@@ -1,12 +1,8 @@
-const { defineConfig } = require("cypress");
-
-module.exports = defineConfig({
+module.exports = {
   e2e: {
-    baseUrl: "http://localhost:3000",
-    viewportWidth: 1280,
-    viewportHeight: 800,
     setupNodeEvents(on, config) {
-      // custom plugins/events
+      
     },
+    supportFile: 'cypress/support/e2e.js',
   },
-});
+};
