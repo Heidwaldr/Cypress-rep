@@ -3,8 +3,8 @@ describe('UI: Хедер та футер', () => {
     cy.clearCookies();
     cy.clearLocalStorage();
     cy.visit('https://qauto.forstudy.space', {
-      failOnStatusCode: false,   // ✅ Додаємо, щоб не падало на 401
-      timeout: 60000             // ⏳ Додатково на випадок довгого завантаження
+      failOnStatusCode: false,   // 
+      timeout: 60000             // 
     });
     cy.get('body', { timeout: 10000 }).should('be.visible');
   });
